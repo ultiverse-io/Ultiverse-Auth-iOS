@@ -1,0 +1,63 @@
+PODS:
+  - Alamofire (5.6.4)
+  - BigInt (5.2.0)
+  - CryptoSwift (1.7.0)
+  - ParticleAuthService (0.12.0):
+    - CryptoSwift
+    - ParticleNetworkBase
+    - RxAlamofire (~> 6.1.1)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+    - SwiftyJSON (~> 5.0)
+    - SwiftyUserDefaults (~> 5.3.0)
+  - ParticleNetworkBase (0.12.0):
+    - BigInt (~> 5.2.0)
+    - CryptoSwift
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SwiftyJSON (5.0.1)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - ParticleAuthService (= 0.12.0)
+  - ParticleNetworkBase (= 0.12.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - BigInt
+    - CryptoSwift
+    - ParticleAuthService
+    - ParticleNetworkBase
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  BigInt: f668a80089607f521586bbe29513d708491ef2f7
+  CryptoSwift: e71dbe5bbb7a945e365d4b9034dbccf28d033a8f
+  ParticleAuthService: 8ccd8b02ed3152830f5af06eef60b5b3d9be1151
+  ParticleNetworkBase: 30d0be1a52b44db9fa6df4983b5d9d0192c50da2
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: f658f0463938d29117abfd4b55b137fb4114b8d1
+
+COCOAPODS: 1.12.0
