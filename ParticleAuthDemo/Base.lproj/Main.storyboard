@@ -28,16 +28,30 @@
                                     <action selector="LoginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZX-zj-ZoU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-Zc-LC0" userLabel="PublicAddress">
+                                <rect key="frame" x="30" y="456" width="330" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J9y-75-91o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vyT-0E-i12" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="339" id="EWi-nX-66u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbt-Zc-LC0" secondAttribute="trailing" constant="30" id="K5f-QO-sCM"/>
+                            <constraint firstItem="lbt-Zc-LC0" firstAttribute="top" secondItem="vyT-0E-i12" secondAttribute="bottom" constant="35" id="Nd5-bB-p3J"/>
+                            <constraint firstItem="lbt-Zc-LC0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Yao-aB-PcR"/>
                             <constraint firstItem="vyT-0E-i12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZSw-fv-MOa"/>
+                            <constraint firstItem="lbt-Zc-LC0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mlX-mJ-VD4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="LoginButton" destination="vyT-0E-i12" id="F0O-ts-hCM"/>
+                        <outlet property="publicAddressLabel" destination="lbt-Zc-LC0" id="hyE-1S-3TS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

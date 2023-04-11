@@ -16,7 +16,12 @@ class LoginManager {
     
     var vc: SFSafariViewController?
     
-    func login() {
+    var loginSuccess: ((UserInfo?) -> Void)?
+    var loginFailure: ((Error) -> Void)?
+    
+    func login(success: ((UserInfo?) -> Void)?, failure: ((Error) -> Void)?) {
+        
+        
         var projectId = ""
         var clientKey = ""
         var appId = ""
@@ -30,6 +35,9 @@ class LoginManager {
             clientKey = projectClientKey
             appId = projectAppUuid
         }
+        
+        self.loginSuccess = success
+        self.loginFailure = failure
         
         let string = "https://web-demo.particle.network/webRedirect?projectId=\(projectId)&clientKey=\(clientKey)&appId=\(appId)"
         
@@ -66,9 +74,11 @@ class LoginManager {
                 
                 switch result {
                 case .success(let userInfo):
+                    self.loginSuccess?(userInfo)
                     print("login success")
                     print(userInfo)
                 case .failure(let error):
+                    self.loginFailure?(error)
                     print("login failed")
                     print(error)
                 }
