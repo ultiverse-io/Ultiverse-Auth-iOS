@@ -74,14 +74,14 @@
 		5F2F772C29135ED50000A2AE /* ParticleAuthDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5F2F774129135F850000A2AE /* ParticleNetwork-Info.plist */,
 				5F2F772D29135ED50000A2AE /* AppDelegate.swift */,
-				5F2F773129135ED50000A2AE /* ViewController.swift */,
-				5F2F773329135ED50000A2AE /* Main.storyboard */,
 				5F2F773629135ED60000A2AE /* Assets.xcassets */,
-				5F2F773829135ED60000A2AE /* LaunchScreen.storyboard */,
 				5F2F773B29135ED60000A2AE /* Info.plist */,
+				5F2F773829135ED60000A2AE /* LaunchScreen.storyboard */,
 				5F2731B229D59260002F53D0 /* LoginManager.swift */,
+				5F2F773329135ED50000A2AE /* Main.storyboard */,
+				5F2F774129135F850000A2AE /* ParticleNetwork-Info.plist */,
+				5F2F773129135ED50000A2AE /* ViewController.swift */,
 			);
 			path = ParticleAuthDemo;
 			sourceTree = "<group>";
